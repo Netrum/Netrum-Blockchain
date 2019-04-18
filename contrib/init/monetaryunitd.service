@@ -1,0 +1,26 @@
+[Unit]
+Description=Netrum's distributed currency daemon
+After=network.target
+
+[Service]
+User=netrum
+Group=netrum
+
+Type=forking
+PIDFile=/var/lib/netrumd/netrumd.pid
+
+ExecStart=/usr/bin/netrumd -daemon -pid=/var/lib/netrumd/netrumd.pid \
+          -conf=/etc/netrum/netrum.conf -datadir=/var/lib/netrumd
+
+ExecStop=-/usr/bin/netrum-cli -conf=/etc/netrum/netrum.conf \
+         -datadir=/var/lib/netrumd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

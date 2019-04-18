@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Netrum
+Comment=Netrum P2P Cryptocurrency
+Comment[fr]=Netrum, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Netrum, eşten eşe kriptografik sanal para birimi
+Exec=netrum-qt %u
+Terminal=false
+Type=Application
+Icon=netrum128
+MimeType=x-scheme-handler/netrum;
+Categories=Office;Finance;

@@ -1,0 +1,11 @@
+[Protocol]
+exec=netrum-qt '%u'
+protocol=netrum
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

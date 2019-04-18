@@ -1,0 +1,30 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/netrum_bg.qm</file>
+        <file alias="ca">locale/netrum_ca.qm</file>
+        <file alias="cs">locale/netrum_cs.qm</file>
+        <file alias="da">locale/netrum_da.qm</file>
+        <file alias="de">locale/netrum_de.qm</file>
+        <file alias="en">locale/netrum_en.qm</file>
+        <file alias="en_US">locale/netrum_en_US.qm</file>
+        <file alias="es">locale/netrum_es.qm</file>
+        <file alias="fi">locale/netrum_fi.qm</file>
+        <file alias="fr_FR">locale/netrum_fr_FR.qm</file>
+        <file alias="hr">locale/netrum_hr.qm</file>
+        <file alias="it">locale/netrum_it.qm</file>
+        <file alias="ja">locale/netrum_ja.qm</file>
+        <file alias="ko_KR">locale/netrum_ko_KR.qm</file>
+        <file alias="nl">locale/netrum_nl.qm</file>
+        <file alias="pl">locale/netrum_pl.qm</file>
+        <file alias="pt">locale/netrum_pt.qm</file>
+        <file alias="pt_BR">locale/netrum_pt_BR.qm</file>
+        <file alias="ro_RO">locale/netrum_ro_RO.qm</file>
+        <file alias="ru">locale/netrum_ru.qm</file>
+        <file alias="sk">locale/netrum_sk.qm</file>
+        <file alias="sv">locale/netrum_sv.qm</file>
+        <file alias="tr">locale/netrum_tr.qm</file>
+        <file alias="uk">locale/netrum_uk.qm</file>
+        <file alias="zh_CN">locale/netrum_zh_CN.qm</file>
+        <file alias="zh_TW">locale/netrum_zh_TW.qm</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,26 @@
+# /etc/conf.d/netrumd: config file for /etc/init.d/netrumd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/netrum/netrum.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/netrumd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/netrumd.pid"
+
+# Where to write netrumd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/netrumd"
+
+# User and group to own netrumd process
+#BITCOIND_USER="netrum"
+#BITCOIND_GROUP="netrum"
+
+# Path to netrumd executable
+#BITCOIND_BIN="/usr/bin/netrumd"
+
+# Nice value to run netrumd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

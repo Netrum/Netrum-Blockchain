@@ -1,5 +1,5 @@
 NTR 1.0
-Netrum Core integration/staging repository
+Netrum Core
 =====================================
 ## Coin Specs ##
 <table>

@@ -1,5 +1,5 @@
---- cdrkit-1.1.11.old/genisoimage/tree.c	2008-10-21 19:57:47.000000000 -0400
-+++ cdrkit-1.1.11/genisoimage/tree.c	2013-12-06 00:23:18.489622668 -0500
+--- cdrkit-1.2.21.old/genisoimage/tree.c	2008-10-21 19:57:47.000000000 -0400
++++ cdrkit-1.2.21/genisoimage/tree.c	2013-12-06 00:23:18.489622668 -0500
 @@ -1139,8 +1139,9 @@
  scan_directory_tree(struct directory *this_dir, char *path, 
  						  struct directory_entry *de)

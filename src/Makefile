@@ -138,7 +138,7 @@ am__append_5 = netrum-cli netrum-tx
 #  test/wallet_tests.cpp
 
 #am__append_16 = $(LIBBITCOIN_WALLET)
-#am__append_17 = $(ZMQ_LIBS)
+##am__append_17 = $(ZMQ_LIBS)
 #am__append_18 = $(CLEAN_BITCOIN_TEST)
 am__append_19 = qt/netrum-qt
 am__append_20 = qt/libbitcoinqt.a
@@ -186,7 +186,7 @@ am__append_22 = \
 #am__append_23 = $(BITCOIN_MM)
 #am__append_24 = $(BITCOIN_RC)
 am__append_25 = $(LIBBITCOIN_WALLET)
-am__append_26 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+#am__append_26 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 am__append_27 = $(CLEAN_QT)
 
 # Copyright (c) 2013-2016 The Bitcoin Core developers
@@ -199,7 +199,7 @@ am__append_27 = $(CLEAN_QT)
 #  qt/test/paymentservertests.cpp
 
 #am__append_32 = $(LIBBITCOIN_WALLET)
-#am__append_33 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+##am__append_33 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 #am__append_34 = $(CLEAN_BITCOIN_QT_TEST)
 subdir = src
 SUBDIRS =
@@ -414,9 +414,9 @@ libbitcoin_zmq_a_AR = $(AR) $(ARFLAGS)
 libbitcoin_zmq_a_LIBADD =
 am__libbitcoin_zmq_a_SOURCES_DIST = zmq/zmqabstractnotifier.cpp \
 	zmq/zmqnotificationinterface.cpp zmq/zmqpublishnotifier.cpp
-am_libbitcoin_zmq_a_OBJECTS = zmq/libbitcoin_zmq_a-zmqabstractnotifier.$(OBJEXT) \
-	zmq/libbitcoin_zmq_a-zmqnotificationinterface.$(OBJEXT) \
-	zmq/libbitcoin_zmq_a-zmqpublishnotifier.$(OBJEXT)
+#am_libbitcoin_zmq_a_OBJECTS = zmq/libbitcoin_zmq_a-zmqabstractnotifier.$(OBJEXT) \
+#	zmq/libbitcoin_zmq_a-zmqnotificationinterface.$(OBJEXT) \
+#	zmq/libbitcoin_zmq_a-zmqpublishnotifier.$(OBJEXT)
 libbitcoin_zmq_a_OBJECTS = $(am_libbitcoin_zmq_a_OBJECTS)
 qt_libbitcoinqt_a_AR = $(AR) $(ARFLAGS)
 qt_libbitcoinqt_a_LIBADD =
@@ -817,9 +817,9 @@ am_qt_netrum_qt_OBJECTS =  \
 	qt/qt_netrum_qt-netrum.$(OBJEXT) \
 	$(am__objects_15) $(am__objects_17)
 qt_netrum_qt_OBJECTS = $(am_qt_netrum_qt_OBJECTS)
-am__DEPENDENCIES_5 =  \
-	$(LIBBITCOIN_ZMQ) \
-	$(am__DEPENDENCIES_1)
+#am__DEPENDENCIES_5 =  \
+#	$(LIBBITCOIN_ZMQ) \
+#	$(am__DEPENDENCIES_1)
 qt_netrum_qt_DEPENDENCIES = qt/libbitcoinqt.a \
 	$(LIBBITCOIN_SERVER) $(am__append_25) \
 	$(am__DEPENDENCIES_5) $(LIBBITCOIN_CLI) \
@@ -850,9 +850,9 @@ am__qt_test_test_netrum_qt_SOURCES_DIST = qt/test/test_main.cpp \
 #	$(am__objects_20)
 qt_test_test_netrum_qt_OBJECTS = $(am_qt_test_test_netrum_qt_OBJECTS) \
 	$(nodist_qt_test_test_netrum_qt_OBJECTS)
-#am__DEPENDENCIES_6 =  \
-#	$(LIBBITCOIN_ZMQ) \
-#	$(am__DEPENDENCIES_1)
+##am__DEPENDENCIES_6 =  \
+##	$(LIBBITCOIN_ZMQ) \
+##	$(am__DEPENDENCIES_1)
 #qt_test_test_netrum_qt_DEPENDENCIES =  \
 #	$(LIBBITCOINQT) $(LIBBITCOIN_SERVER) \
 #	$(am__append_32) $(am__DEPENDENCIES_6) \
@@ -953,8 +953,8 @@ am__test_test_netrum_SOURCES_DIST = test/allocator_tests.cpp \
 #	$(am__objects_23)
 test_test_netrum_OBJECTS = $(am_test_test_netrum_OBJECTS) \
 	$(nodist_test_test_netrum_OBJECTS)
-#am__DEPENDENCIES_7 =  \
-#	$(am__DEPENDENCIES_1)
+##am__DEPENDENCIES_7 =  \
+##	$(am__DEPENDENCIES_1)
 #test_test_netrum_DEPENDENCIES =  \
 #	$(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) \
 #	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
@@ -1313,15 +1313,15 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /mnt/e/Netrum-Blockchain-master/build-aux/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/brands/Desktop/Netrum-Blockchain/build-aux/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/ar
 ARFLAGS = cr
-AUTOCONF = ${SHELL} /mnt/e/Netrum-Blockchain-master/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /mnt/e/Netrum-Blockchain-master/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /mnt/e/Netrum-Blockchain-master/build-aux/missing automake-1.15
-AWK = gawk
+AUTOCONF = ${SHELL} /home/brands/Desktop/Netrum-Blockchain/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/brands/Desktop/Netrum-Blockchain/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /home/brands/Desktop/Netrum-Blockchain/build-aux/missing automake-1.15
+AWK = mawk
 BDB_CFLAGS = 
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
@@ -1349,8 +1349,8 @@ CFLAGS = -g -O2
 CLIENT_VERSION_BUILD = 0
 CLIENT_VERSION_IS_RELEASE = true
 CLIENT_VERSION_MAJOR = 1
-CLIENT_VERSION_MINOR = 1
-CLIENT_VERSION_REVISION = 1
+CLIENT_VERSION_MINOR = 2
+CLIENT_VERSION_REVISION = 2
 COMPARISON_TOOL_REORG_TESTS = 0
 COPYRIGHT_YEAR = 2019
 CPP = gcc -E
@@ -1415,7 +1415,7 @@ LTLIBOBJS =
 LT_SYS_LIBRARY_PATH = 
 LUPDATE = /usr/lib/qt5/bin/lupdate
 MAINT = 
-MAKEINFO = ${SHELL} /mnt/e/Netrum-Blockchain-master/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /home/brands/Desktop/Netrum-Blockchain/build-aux/missing makeinfo
 MAKENSIS = 
 MANIFEST_TOOL = :
 MINIUPNPC_CPPFLAGS = 
@@ -1436,10 +1436,10 @@ OTOOL64 =
 PACKAGE = netrum
 PACKAGE_BUGREPORT = www.netrum.io
 PACKAGE_NAME = Netrum Core
-PACKAGE_STRING = Netrum Core 1.1.1
+PACKAGE_STRING = Netrum Core 1.2.2
 PACKAGE_TARNAME = netrum
 PACKAGE_URL = 
-PACKAGE_VERSION = 1.1.1
+PACKAGE_VERSION = 1.2.2
 PATH_SEPARATOR = :
 PIC_FLAGS = -fPIC
 PIE_FLAGS = -fPIC
@@ -1456,7 +1456,7 @@ PTHREAD_LIBS =
 PYTHON = /usr/bin/python3.6
 PYTHONPATH = 
 QR_CFLAGS = 
-QR_LIBS = 
+QR_LIBS = -lqrencode
 QT4_CFLAGS = 
 QT4_LIBS = 
 QT5_CFLAGS = -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/x86_64-linux-gnu/qt5
@@ -1497,18 +1497,18 @@ UNIVALUE_CFLAGS = -I$(srcdir)/univalue/include
 UNIVALUE_LIBS = univalue/libunivalue.la
 USE_QRCODE = 
 USE_UPNP = 
-VERSION = 1.1.1
+VERSION = 1.2.2
 WINDOWS_BITS = 
 WINDRES = 
 X11XCB_CFLAGS = 
 X11XCB_LIBS = 
-XGETTEXT = 
+XGETTEXT = /usr/bin/xgettext
 ZMQ_CFLAGS = 
-ZMQ_LIBS = -lzmq
-abs_builddir = /mnt/e/Netrum-Blockchain-master/src
-abs_srcdir = /mnt/e/Netrum-Blockchain-master/src
-abs_top_builddir = /mnt/e/Netrum-Blockchain-master
-abs_top_srcdir = /mnt/e/Netrum-Blockchain-master
+ZMQ_LIBS = 
+abs_builddir = /home/brands/Desktop/Netrum-Blockchain/src
+abs_srcdir = /home/brands/Desktop/Netrum-Blockchain/src
+abs_top_builddir = /home/brands/Desktop/Netrum-Blockchain
+abs_top_srcdir = /home/brands/Desktop/Netrum-Blockchain
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -1540,7 +1540,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /mnt/e/Netrum-Blockchain-master/build-aux/install-sh
+install_sh = ${SHELL} /home/brands/Desktop/Netrum-Blockchain/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -1585,7 +1585,7 @@ LIBBITCOIN_UTIL = libbitcoin_util.a
 LIBBITCOIN_CRYPTO = crypto/libbitcoin_crypto.a
 LIBBITCOINQT = qt/libbitcoinqt.a
 LIBSECP256K1 = secp256k1/libsecp256k1.la
-LIBBITCOIN_ZMQ = libbitcoin_zmq.a
+#LIBBITCOIN_ZMQ = libbitcoin_zmq.a
 #LIBBITCOINCONSENSUS = libbitcoinconsensus.la
 LIBBITCOIN_WALLET = libbitcoin_wallet.a
 lib_LTLIBRARIES = $(LIBBITCOINCONSENSUS)
@@ -1731,12 +1731,12 @@ libbitcoin_server_a_SOURCES = \
   validationinterface.cpp \
   $(BITCOIN_CORE_H)
 
-libbitcoin_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
-libbitcoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_zmq_a_SOURCES = \
-  zmq/zmqabstractnotifier.cpp \
-  zmq/zmqnotificationinterface.cpp \
-  zmq/zmqpublishnotifier.cpp
+#libbitcoin_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
+#libbitcoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+#libbitcoin_zmq_a_SOURCES = \
+#  zmq/zmqabstractnotifier.cpp \
+#  zmq/zmqnotificationinterface.cpp \
+#  zmq/zmqpublishnotifier.cpp
 
 
 # wallet: shared between netrumd and netrum-qt, but only linked
